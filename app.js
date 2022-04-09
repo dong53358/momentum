@@ -1,13 +1,9 @@
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sat = "sat";
-const sun = "sun";
+const dayOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
-const dayOfWeek = [mon, tue, wed, thu, fri, sat, sun];
+// Get Item from Array
+console.log(dayOfWeek);
 
-const nonsense = [1, 2, "hello", false, null, true, undefined, "gg"];
+// Add one bore day to yhe array
 
-console.log(dayOfWeek, nonsense);
+dayOfWeek.push("sun");
+console.log(dayOfWeek);

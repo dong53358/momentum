@@ -1,23 +1,28 @@
 const calculator = {
   add: function (a, b) {
-    console.log(a + b);
+    return a + b;
   },
   sub: function (a, b) {
-    console.log(a - b);
+    return a - b;
   },
   dev: function (a, b) {
-    console.log(a / b);
+    return a / b;
   },
   mul: function (a, b) {
-    console.log(a * b);
+    return a * b;
   },
   squ: function (a, b) {
-    console.log(a ** b);
+    return a ** b;
   },
 };
 
-calculator.add(100, 10);
-calculator.sub(100, 10);
-calculator.dev(100, 10);
-calculator.mul(100, 10);
-calculator.squ(2, 5);
+let result = calculator.add(100, 10);
+console.log(result);
+result = calculator.sub(100, 10);
+console.log(result);
+result = calculator.dev(100, 10);
+console.log(result);
+result = calculator.mul(100, 10);
+console.log(result);
+result = calculator.squ(2, 5);
+console.log(result);

@@ -16,13 +16,25 @@ const calculator = {
   },
 };
 
-let result = calculator.add(100, 10);
-console.log(result);
-result = calculator.sub(100, 10);
-console.log(result);
-result = calculator.dev(100, 10);
-console.log(result);
-result = calculator.mul(100, 10);
-console.log(result);
-result = calculator.squ(2, 5);
-console.log(result);
+const plusResult = calculator.add(2, 3);
+const subResult = calculator.sub(plusResult, 10);
+const devResult = calculator.dev(10, subResult);
+const mulResult = calculator.mul(devResult, plusResult);
+const squResult = calculator.squ(mulResult, subResult);
+
+const result = [plusResult, subResult, devResult, mulResult, squResult];
+
+for (i = 0; i < result.length; i++) {
+  console.log(result[i]);
+}
+
+let age = prompt("How old are you?");
+
+console.log(age);
+console.log(typeof age);
+age = parseInt(age);
+console.log(typeof age);
+
+age = parseInt(prompt("How old are you?"));
+
+console.log(age);

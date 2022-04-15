@@ -1,14 +1,14 @@
 const h1 = document.querySelector(".hello h1");
 
 function handleh1Click() {
-  const currentColor = h1.style.color;
-  let newColor;
-  if (currentColor === "blue") {
-    newColor = "tomato";
+  h1.classList.toggle("clicked");
+  /* 
+  const clickedClass= "clicked"
+  if (h1.classList.contains(clickedClass)) {
+    h1.classList.remove(clickedClass);
   } else {
-    newColor = "blue";
-  }
-  h1.style.color = newColor;
+    h1.classList.add(clickedClass);
+  }*/
 }
 
 h1.addEventListener("click", handleh1Click);

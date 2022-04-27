@@ -1,3 +1,8 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
 .hidden {
   display: none;
 }
@@ -15,5 +20,135 @@ img {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   color: white;
+  margin: 10px;
+}
+
+#weather {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+#weather span {
+  margin: 0px 5px;
+  font-size: 25px;
+}
+
+#weather span:nth-child(3) {
+  font-size: 5px;
+  margin-right: 10px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 280px;
+  margin-bottom: 100px;
+}
+
+#clock {
+  font-size: 150px;
+  margin-bottom: 20px;
+}
+
+.login-form-input,
+.todo-form-input {
+  width: 300px;
+  height: 60px;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: transparent;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: white;
+  caret-color: white;
+  outline: none;
+  text-align: center;
+}
+
+input::placeholder {
+  color: white;
+}
+
+#greeting {
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#quote {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quote span:first-child {
+  font-size: 25px;
+}
+
+#quote span:last-child {
+  opacity: 80%;
+}
+
+.moveup {
+  transform: translate(0px, -20px);
+  transition: 1s ease-in-out;
+}
+
+#todo-list {
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+#todo-list::-webkit-scrollbar {
+  display: none;
+}
+
+.top_book {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
+
+.top_book::-webkit-scrollbar {
+  display: none;
 }

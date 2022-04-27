@@ -6,7 +6,7 @@ function getClock() {
   let minutes = String(date.getMinutes()).padStart(2, "0");
   let seconds = String(date.getSeconds()).padStart(2, "0");
 
-  clock.innerText = `${hours}:${minutes}:${seconds}`;
+  clock.innerText = `${hours}:${minutes}`;
 
   // clock.innerText = new Date().toLocaleTimeString();
 }

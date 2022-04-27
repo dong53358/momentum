@@ -6,31 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Momentum App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bdcef3afaf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="login-form hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-      />
-      <input type="submit" value="Log in" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input required type="text" placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div class="main">
+      <div id="weather">
+        <span></span>
+        <span></span>
+        <span><i class="fa-solid fa-circle-dot"></i></span>
+        <span></span>
+      </div>
+
+      <div class="center">
+        <h2 id="clock">00:00:00</h2>
+        <form class="login-form hidden">
+          <input
+            class="login-form-input"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What's your name?"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='What is your name?'"
+          />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+          <input
+            class="todo-form-input"
+            required
+            type="text"
+            placeholder="Write a To Do Here"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Write a To Do Here'"
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+
+      <div id="quote" class="hitbox">
+        <span></span>
+        <span class="hidden"></span>
+      </div>
     </div>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

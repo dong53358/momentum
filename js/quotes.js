@@ -46,10 +46,24 @@ const quotes = [
   },
 ];
 
+const hitbox = document.querySelector(".hitbox");
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+function mouseIn() {
+  quote.classList.add("moveup");
+  author.classList.remove("hidden");
+}
+
+function mouseOut() {
+  quote.classList.remove("moveup");
+  author.classList.add("hidden");
+}
+
+hitbox.addEventListener("mouseover", mouseIn);
+hitbox.addEventListener("mouseout", mouseOut);
 
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;

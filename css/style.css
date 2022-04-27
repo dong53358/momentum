@@ -75,7 +75,7 @@ body {
   border: none;
   border-bottom: 3px solid white;
   background-color: transparent;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 30px;
   color: white;
   caret-color: white;
@@ -88,8 +88,7 @@ input::placeholder {
 }
 
 #greeting {
-  margin-bottom: 30px;
-  font-size: 50px;
+  margin-bottom: 15px;
 }
 
 .button {
